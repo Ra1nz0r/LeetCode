@@ -1,2 +1,3 @@
-# LeetCode
-My LeetCode practice repository: Go solutions, algorithms, data structures, and notes for backend interview preparation.
+# codewars_tasks
+
+Solving LeetCode tasks.
