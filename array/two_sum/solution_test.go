@@ -1,43 +1,44 @@
 package two_sum
 
-/*func TestGrowingPlant(t *testing.T) {
+import (
+	"fmt"
+	"testing"
+
+	"github.com/magiconair/properties/assert"
+)
+
+func TestTwoSum(t *testing.T) {
 
 	tests := []struct {
-		upSpeed       int
-		downSpeed     int
-		desiredHeight int
-		expected      int
+		nums     []int
+		target   int
+		expected []int
 	}{
 		{
-			upSpeed:       100,
-			downSpeed:     10,
-			desiredHeight: 910,
-			expected:      10,
+			nums:     []int{2, 7, 11, 15},
+			target:   9,
+			expected: []int{0, 1},
 		},
 		{
-			upSpeed:       10,
-			downSpeed:     9,
-			desiredHeight: 4,
-			expected:      1,
+			nums:     []int{3, 2, 4},
+			target:   6,
+			expected: []int{1, 2},
 		},
 		{
-			upSpeed:       5,
-			downSpeed:     2,
-			desiredHeight: 6,
-			expected:      2,
+			nums:     []int{3, 3},
+			target:   6,
+			expected: []int{0, 1},
 		},
 	}
 
 	for _, test := range tests {
 
-		result := GrowingPlant(test.upSpeed, test.downSpeed, test.desiredHeight)
+		result := TwoSum(test.nums, test.target)
 
-		if result != test.expected {
-			t.Errorf(
-				"got %v expected %v",
-				result,
-				test.expected,
-			)
-		}
+		assert.Equal(t, result, test.expected, fmt.Sprintf(
+			"got %v expected %v",
+			result,
+			test.expected),
+		)
 	}
-}*/
+}
