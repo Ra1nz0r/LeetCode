@@ -1,3 +1,3 @@
-# codewars_tasks
+# LeetCode
 
 Solving LeetCode tasks.
