@@ -1,30 +1,32 @@
 package two_sum
 
 import (
-	"fmt"
 	"testing"
 
-	"github.com/magiconair/properties/assert"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestTwoSum(t *testing.T) {
-
 	tests := []struct {
+		name     string
 		nums     []int
 		target   int
 		expected []int
 	}{
 		{
+			name:     "example 1",
 			nums:     []int{2, 7, 11, 15},
 			target:   9,
 			expected: []int{0, 1},
 		},
 		{
+			name:     "example 2",
 			nums:     []int{3, 2, 4},
 			target:   6,
 			expected: []int{1, 2},
 		},
 		{
+			name:     "same numbers",
 			nums:     []int{3, 3},
 			target:   6,
 			expected: []int{0, 1},
@@ -32,13 +34,9 @@ func TestTwoSum(t *testing.T) {
 	}
 
 	for _, test := range tests {
-
-		result := TwoSum(test.nums, test.target)
-
-		assert.Equal(t, result, test.expected, fmt.Sprintf(
-			"got %v expected %v",
-			result,
-			test.expected),
-		)
+		t.Run(test.name, func(t *testing.T) {
+			result := TwoSum(test.nums, test.target)
+			assert.Equal(t, test.expected, result)
+		})
 	}
 }
