@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestTwoSum(t *testing.T) {
+func TestContainsDuplicate(t *testing.T) {
 	tests := []struct {
 		name     string
 		nums     []int
