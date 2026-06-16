@@ -1,12 +1,10 @@
 package main
 
 import (
-	"fmt"
-	"leetcode/array/best_time_to_buy_and_sell_stock"
+	"leetcode/array/move_zeroes"
 )
 
 func main() {
-	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{7, 1, 5, 3, 6, 4}))
-	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{7, 6, 4, 3, 1}))
-	fmt.Println(best_time_to_buy_and_sell_stock.MaxProfit([]int{1, 5}))
+	move_zeroes.MoveZeroes([]int{0, 1, 0, 3, 12})
+	move_zeroes.MoveZeroes([]int{0})
 }
