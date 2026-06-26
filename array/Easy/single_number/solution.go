@@ -10,7 +10,8 @@ func SingleNumber(nums []int) int {
 	return result
 }
 
-func SingleNumber1(nums []int) int {
+// Обычное решение через map, затраты выше.
+func SingleNumberMap(nums []int) int {
 	m := make(map[int]int, len(nums))
 
 	for _, v := range nums {

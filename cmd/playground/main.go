@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"leetcode/array/single_number"
+	"leetcode/array/Easy/single_number"
 )
 
 func main() {
