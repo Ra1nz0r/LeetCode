@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"leetcode/array/Easy/single_number"
+	"leetcode/array/Easy/majority_element"
 )
 
 func main() {
-	fmt.Println(single_number.SingleNumber([]int{2, 2, 1}))
-	fmt.Println(single_number.SingleNumber([]int{4, 1, 2, 1, 2}))
-	fmt.Println(single_number.SingleNumber([]int{1}))
+	fmt.Println(majority_element.MajorityElementBoyerMooreType([]int{3, 2, 3}))
+	fmt.Println(majority_element.MajorityElementBoyerMooreType([]int{2, 2, 1, 1, 1, 2, 2}))
+	fmt.Println(majority_element.MajorityElementBoyerMooreType([]int{1}))
 }
