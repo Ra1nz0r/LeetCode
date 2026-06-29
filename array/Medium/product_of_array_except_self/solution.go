@@ -1,7 +1,5 @@
 package product_of_array_except_self
 
-import "fmt"
-
 func ProductExceptSelf(nums []int) []int {
 	mltpnTotal := 1
 
@@ -12,8 +10,6 @@ func ProductExceptSelf(nums []int) []int {
 			mltpnTotal *= v
 		}
 	}
-
-	fmt.Println(mltpnTotal)
 
 	for k := range nums {
 		if nums[k] == 0 {
