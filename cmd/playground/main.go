@@ -12,4 +12,6 @@ func main() {
 	fmt.Println(longest_consecutive_sequence.LongestConsecutive([]int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}))
 	fmt.Println("Ввели [1,0,1,2],  ожидаем ответ 3")
 	fmt.Println(longest_consecutive_sequence.LongestConsecutive([]int{1, 0, 1, 2}))
+	fmt.Println("Ввели [1,100,6,101,102,99], ожидаем ответ 3")
+	fmt.Println(longest_consecutive_sequence.LongestConsecutive([]int{1, 100, 6, 101, 102, 99}))
 }
