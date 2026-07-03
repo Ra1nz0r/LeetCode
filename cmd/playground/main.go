@@ -2,12 +2,14 @@ package main
 
 import (
 	"fmt"
-	"leetcode/array/Medium/product_of_array_except_self"
+	"leetcode/array/Medium/longest_consecutive_sequence"
 )
 
 func main() {
-	fmt.Println("Ввели [1,2,3,4],  ожидаем ответ [24,12,8,6]")
-	fmt.Println(product_of_array_except_self.ProductExceptSelf([]int{1, 2, 3, 4}))
-	fmt.Println("Ввели [-1,1,0,-3,3],  ожидаем ответ [0,0,9,0,0]")
-	fmt.Println(product_of_array_except_self.ProductExceptSelf([]int{-1, 1, 0, -3, 3}))
+	fmt.Println("Ввели [100,4,200,1,3,2],  ожидаем ответ 4")
+	fmt.Println(longest_consecutive_sequence.LongestConsecutive([]int{100, 4, 200, 1, 3, 2}))
+	fmt.Println("Ввели [0,3,7,2,5,8,4,6,0,1],  ожидаем ответ 9")
+	fmt.Println(longest_consecutive_sequence.LongestConsecutive([]int{0, 3, 7, 2, 5, 8, 4, 6, 0, 1}))
+	fmt.Println("Ввели [1,0,1,2],  ожидаем ответ 3")
+	fmt.Println(longest_consecutive_sequence.LongestConsecutive([]int{1, 0, 1, 2}))
 }
