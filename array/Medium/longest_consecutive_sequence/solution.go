@@ -1,28 +1,35 @@
 package longest_consecutive_sequence
 
-import (
-	"fmt"
-	"sort"
-)
-
 func LongestConsecutive(nums []int) int {
-	sort.Ints(nums)
-
-	fmt.Println("Sort nums", nums)
-
-	seen := make(map[int]int, len(nums))
+	seen := make(map[int]struct{}, len(nums))
 
 	for _, v := range nums {
-		if _, ok := seen[v-1]; !ok {
-			seen[v] = 1
+		seen[v] = struct{}{}
+	}
+
+	longestLen := 0
+
+	for v := range seen {
+		if _, ok := seen[v-1]; ok {
 			continue
-		} else {
-			seen[v-1] = seen[v+1]
-			seen[v]++
+		}
+
+		length := 1
+		current := v
+
+		for {
+			if _, ok := seen[current+1]; !ok {
+				break
+			}
+
+			length++
+			current++
+		}
+
+		if length > longestLen {
+			longestLen = length
 		}
 	}
 
-	fmt.Println(seen)
-
-	return 0
+	return longestLen
 }
