@@ -12,4 +12,6 @@ func main() {
 	fmt.Println(three_sum.ThreeSum([]int{0, 1, 1}))
 	fmt.Println("Ввели [0,0,0],  ожидаем ответ [[0,0,0]]")
 	fmt.Println(three_sum.ThreeSum([]int{0, 0, 0}))
+	fmt.Println("Ввели [-2, 0, 0, 2, 2],  ожидаем ответ [-2, 0, 2]]")
+	fmt.Println(three_sum.ThreeSum([]int{-2, 0, 0, 2, 2}))
 }
