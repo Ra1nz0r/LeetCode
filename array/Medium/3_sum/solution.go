@@ -1,4 +1,4 @@
-package container_with_most_water
+package three_sum
 
 func ThreeSum(nums []int) [][]int {
 	return [][]int{}
