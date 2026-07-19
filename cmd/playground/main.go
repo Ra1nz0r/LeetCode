@@ -2,16 +2,12 @@ package main
 
 import (
 	"fmt"
-	three_sum "leetcode/array/Medium/3_sum"
+	"leetcode/array/Medium/subarray_sum_equals_k"
 )
 
 func main() {
-	fmt.Println("Ввели [-1,0,1,2,-1,-4],  ожидаем ответ [[-1,-1,2],[-1,0,1]]")
-	fmt.Println(three_sum.ThreeSum([]int{-1, 0, 1, 2, -1, -4}))
-	fmt.Println("Ввели [0,1,1],  ожидаем ответ []")
-	fmt.Println(three_sum.ThreeSum([]int{0, 1, 1}))
-	fmt.Println("Ввели [0,0,0],  ожидаем ответ [[0,0,0]]")
-	fmt.Println(three_sum.ThreeSum([]int{0, 0, 0}))
-	fmt.Println("Ввели [-2, 0, 0, 2, 2],  ожидаем ответ [-2, 0, 2]]")
-	fmt.Println(three_sum.ThreeSum([]int{-2, 0, 0, 2, 2}))
+	fmt.Println("Ввели [1,1,1],  ожидаем ответ 2")
+	fmt.Println(subarray_sum_equals_k.SubarraySum([]int{1, 1, 1}, 1))
+	fmt.Println("Ввели [1,2,3],  ожидаем ответ 3")
+	fmt.Println(subarray_sum_equals_k.SubarraySum([]int{1, 2, 3}, 3))
 }
