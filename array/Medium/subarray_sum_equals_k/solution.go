@@ -1,15 +1,20 @@
 package subarray_sum_equals_k
 
-import "fmt"
-
 func SubarraySum(nums []int, k int) int {
-	seen := make(map[int]int)
+	currentSum := 0
+	answer := 0
 
-	for i := range nums {
-		seen[i] = nums[i]
+	seenSums := make(map[int]int)
+	seenSums[0] = 1
+
+	for _, num := range nums {
+		currentSum += num
+		previousSum := currentSum - k
+
+		answer += seenSums[previousSum]
+
+		seenSums[currentSum]++
 	}
 
-	fmt.Println(seen)
-
-	return 0
+	return answer
 }
