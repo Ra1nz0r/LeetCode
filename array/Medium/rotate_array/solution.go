@@ -5,5 +5,6 @@ import "fmt"
 func Rotate(nums []int, k int) {
 
 	fmt.Println(nums)
+	fmt.Println(nums)
 
 }
