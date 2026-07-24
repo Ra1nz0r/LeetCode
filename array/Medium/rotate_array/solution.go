@@ -3,16 +3,32 @@ package rotate_array
 import "fmt"
 
 func Rotate(nums []int, k int) {
-	cp := make([]int, len(nums))
+	left := 0
+	right := len(nums) - 1
 
-	for i := len(nums) - 1; i >= 0; i-- {
-		cp[(i+k)%len(nums)] = nums[i]
+	for left < right {
+		nums[left], nums[right] = nums[right], nums[left]
+		left++
+		right--
 	}
 
-	for i := 0; i < len(nums); i++ {
-		nums[i] = cp[i]
+	left = 0
+	right = k - 1
+
+	for left < right {
+		nums[left], nums[right] = nums[right], nums[left]
+		left++
+		right--
+	}
+
+	left = k
+	right = len(nums) - 1
+
+	for left < right {
+		nums[left], nums[right] = nums[right], nums[left]
+		left++
+		right--
 	}
 
 	fmt.Println(nums)
-
 }
