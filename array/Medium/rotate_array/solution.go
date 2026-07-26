@@ -1,7 +1,5 @@
 package rotate_array
 
-import "fmt"
-
 func Rotate(nums []int, k int) {
 	k %= len(nums)
 
@@ -10,7 +8,7 @@ func Rotate(nums []int, k int) {
 	reverse(nums, 0, k-1)
 
 	reverse(nums, k, len(nums)-1)
-	fmt.Println(nums)
+
 }
 
 func reverse(nums []int, left, right int) {
