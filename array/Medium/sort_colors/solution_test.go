@@ -10,7 +10,6 @@ func TestSortColors(t *testing.T) {
 	tests := []struct {
 		name     string
 		nums     []int
-		k        int
 		expected []int
 	}{
 		{
@@ -31,5 +30,4 @@ func TestSortColors(t *testing.T) {
 			assert.Equal(t, test.expected, test.nums)
 		})
 	}
-
 }
