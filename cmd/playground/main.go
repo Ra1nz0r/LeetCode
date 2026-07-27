@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"leetcode/array/Medium/rotate_array"
+	"leetcode/array/Medium/sort_colors"
 )
 
 func main() {
-	fmt.Println("Ввели [1,2,3,4,5,6,7] и 3,  ожидаем ответ [5,6,7,1,2,3,4]")
-	rotate_array.Rotate([]int{1, 2, 3, 4, 5, 6, 7}, 3)
-	fmt.Println("Ввели [-1,-100,3,99] и 2,  ожидаем ответ [3,99,-1,-100]")
-	rotate_array.Rotate([]int{-1, -100, 3, 99}, 2)
+	fmt.Println("Ввели [2,0,2,1,1,0],  ожидаем ответ [0,0,1,1,2,2]")
+	sort_colors.SortColors([]int{2, 0, 2, 1, 1, 0})
+	fmt.Println("Ввели [2,0,1],  ожидаем ответ [0,1,2]")
+	sort_colors.SortColors([]int{2, 0, 1})
 }
