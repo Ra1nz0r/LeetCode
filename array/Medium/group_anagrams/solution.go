@@ -24,3 +24,25 @@ func GroupAnagrams(strs []string) [][]string {
 
 	return result
 }
+
+func GroupAnagrams26int(strs []string) [][]string {
+	groups := make(map[[26]int][]string)
+
+	for _, str := range strs {
+		var key [26]int
+
+		for _, ch := range str {
+			key[ch-'a']++
+		}
+
+		groups[key] = append(groups[key], str)
+	}
+
+	result := make([][]string, 0, len(groups))
+
+	for _, group := range groups {
+		result = append(result, group)
+	}
+
+	return result
+}
