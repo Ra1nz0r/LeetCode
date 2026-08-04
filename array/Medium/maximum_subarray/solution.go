@@ -16,5 +16,7 @@ func MaxSubArray(nums []int) int {
 		}
 	}
 
+	fmt.Println("hello")
+
 	return maximum
 }
