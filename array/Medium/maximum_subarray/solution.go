@@ -1,5 +1,7 @@
 package maximum_subarray
 
+import "fmt"
+
 func MaxSubArray(nums []int) int {
 	current := nums[0]
 	maximum := nums[0]
@@ -16,6 +18,7 @@ func MaxSubArray(nums []int) int {
 		}
 	}
 
+	fmt.Println("hello")
 	fmt.Println("hello")
 
 	return maximum
