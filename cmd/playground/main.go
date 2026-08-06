@@ -9,4 +9,7 @@ func main() {
 	fmt.Println("Ввели [-2,1,-3,4,-1,2,1,-5,4] ожидаем ответ 6")
 	fmt.Println(maximum_subarray.MaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
 
+	fmt.Println("Ввели [1] ожидаем ответ 1")
+	fmt.Println(maximum_subarray.MaxSubArray([]int{1}))
+
 }
