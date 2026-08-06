@@ -16,5 +16,6 @@ func main() {
 	fmt.Println(maximum_subarray.MaxSubArray([]int{5, 4, -1, 7, 8}))
 
 	fmt.Println("Ввели [5,4,-1,7,8] ожидаем ответ 23")
+	fmt.Println("Ввели [5,4,-1,7,8] ожидаем ответ 23")
 
 }
